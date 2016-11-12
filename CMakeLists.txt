@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.6)
 project(MPI)
-
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-
+include_directories(/Users/TN/mpich-install/include)
+#include_directories(/home/ubuntu/mpich-install/include)
 set(SOURCE_FILES main.cpp)
 add_executable(MPI ${SOURCE_FILES})
